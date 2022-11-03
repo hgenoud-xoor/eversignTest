@@ -41,6 +41,7 @@ export const createTemplate = async (
   const signer = createSigner(signerData);
   templateObject.appendSigner(signer);
   const template = replaceFields(fields, templateObject );
+  template.setSandbox(true);
   if (customInfo) {
     const { sandbox, message, redirect, redirectDecline, requesterName } = customInfo;
     template.setSandbox(sandbox || false);

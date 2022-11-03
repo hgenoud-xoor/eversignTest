@@ -28,6 +28,8 @@ export const eversignWebhookHandler: RequestHandler = async (req, res) => {
   // const { related_document_hash, related_user_id } = meta;
   // const { email, name, role, order, id } = signer;
 
+  // eslint-disable-next-line no-console
+  console.log(`Eversign event: ${type}`);
   switch (type) {
     case EversignEvent.DOCUMENT_COMPLETED:
       // Handle DOCUMENT_COMPLETED
