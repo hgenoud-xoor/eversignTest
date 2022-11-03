@@ -1,0 +1,36 @@
+{
+  "extends": "airbnb-typescript/base",
+  "plugins": ["import"],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "import/no-unresolved": "error",
+    "import/no-extraneous-dependencies": "off",
+    "import/prefer-default-export": "off",
+    "lines-between-class-members": "off",
+    "max-len": [
+      "error",
+      {
+        "code": 120,
+        "ignorePattern": "^import\\s.+\\sfrom\\s.+;$",
+        "ignoreStrings": true
+      }
+    ],
+    "no-trailing-spaces": "error",
+    "no-console": "error",
+    "arrow-parens": ["error", "as-needed"],
+    "arrow-spacing": "error",
+    "global-require": "off",
+    "class-methods-use-this": "off",
+    "eol-last": "error"
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": {}
+    }
+  }
+}

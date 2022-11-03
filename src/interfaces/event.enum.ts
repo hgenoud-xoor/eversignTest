@@ -1,0 +1,15 @@
+export enum EversignEvent {
+  DOCUMENT_CREATED = 'document_created',
+  DOCUMENT_VIEWED = 'document_viewed',
+  DOCUMENT_SENT = 'document_sent',
+  DOCUMENT_SIGNED = 'document_signed',
+  DOCUMENT_DECLINED = 'document_declined',
+  DOCUMENT_FORWARDED = 'document_forwarded',
+  SIGNER_REMOVED = 'signer_removed',
+  SIGNER_BOUNCED = 'signer_bounced',
+  DOCUMENT_COMPLETED = 'document_completed',
+  DOCUMENT_EXPIRED = 'document_expired',
+  DOCUMENT_REVOKED = 'document_revoked',
+  DOCUMENT_CANCELLED = 'document_cancelled',
+  EMAIL_VALIDATION_WAIVED = 'email_validation_waived',
+}
