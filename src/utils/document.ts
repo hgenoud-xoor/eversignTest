@@ -2,11 +2,11 @@ import { Document as EversignDocument, SignatureField, Signer, File as EversignF
 
 export const createDocument = (document: EversignDocument) => {
   document.setSandbox(true);
-  document.setRequesterEmail('tester@gmail.com');
+  document.setRequesterEmail('xoor@xoor.io');
   document.setIsDraft(false);
   document.setRedirect('https://eversign.com/?success');
   document.setRedirectDecline('https://eversign.com/?declined');
-  document.setCustomRequesterName('Joe Requester');
+  document.setCustomRequesterName('Xoor Requester');
 
   const signer = new Signer({
     name: 'Signer',
